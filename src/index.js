@@ -10,7 +10,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
-      <footer class="footer">
+
+      <footer className="footer">
         <div>
           Jayesh <span>&copy; 2023 Jordar.</span>
         </div>

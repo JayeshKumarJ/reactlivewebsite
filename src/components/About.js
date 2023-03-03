@@ -1,7 +1,7 @@
 const About =()=>{
     return(
         <>
-        hello from about us page
+                 <div className="p-3 mb-2 bg-danger text-white text-center ">ABOUT US</div>
 
         
         </>

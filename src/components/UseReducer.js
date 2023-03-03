@@ -30,13 +30,17 @@ const UseReducer=()=>{
     }
     const [state, dispatch] = useReducer(reducer, initialState)
  return(
-    <>
- UseReducer using useReducer Hook
-             <p>{state}</p>
-             <button onClick={()=>dispatch({type:"INCREMENT"})}>Increment</button>
-             <button onClick={()=>dispatch({type:"DECREMENT"})}>Decrement</button>
+    <center>
+         <div className="p-3 mb-2 bg-danger text-white text-center ">INCREMENT/DECREMENT USING USE REDUCER</div>
+
+            <div className="container">
+             <p className="mx-5">{state}</p>
+             <button className="btn btn-primary mx-2" onClick={()=>dispatch({type:"INCREMENT"})}>Increment</button>
+             <button className="btn btn-danger" onClick={()=>dispatch({type:"DECREMENT"})}>Decrement</button>
          
-    </>
+    </div>
+    </center>
+
  );   
 }
 export default UseReducer;

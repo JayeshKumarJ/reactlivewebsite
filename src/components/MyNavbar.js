@@ -22,7 +22,7 @@ const MyNavbar=(props)=> {
   return (
     <Navbar collapseOnSelect expand="lg" bg={props.mode} variant={props.mode}>
      
-        <Navbar.Brand href="/Home">JB-Jordar</Navbar.Brand>
+        <Navbar.Brand as ={Link} to="/Home">JB-Jordar</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -34,8 +34,8 @@ const MyNavbar=(props)=> {
             <NavDropdown.Item as={Link} to="/TextConverter">TextConverter</NavDropdown.Item>
 
               <NavDropdown.Item as={Link} to="/UseReducer">UseRedcerHook</NavDropdown.Item>
-              <NavDropdown.Item href="#services/3.2">React</NavDropdown.Item>
-              <NavDropdown.Item href="#services/3.3">Three.js</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Todo">Todo</NavDropdown.Item>
+              <NavDropdown.Item as ={Link} to ="/UseEffects">Chat Message Count</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#services/3.4">NodeJs</NavDropdown.Item>
               <NavDropdown.Item href="#services/3.5">MongoDb</NavDropdown.Item>

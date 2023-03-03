@@ -31,10 +31,11 @@ const handleOnChange=(e)=>{
     
   return (
     <>
+            <div className="p-3 mb-2 bg-danger text-white text-center ">TEXT CONVERTER </div>
+
       <div className="container my-5">
         <Form>
         <Form.Group className="mb-3">
-          <Form.Label>Text Converter</Form.Label>
           <Form.Control as="textarea" rows={3} value={text} onChange={handleOnChange} id="mybox"/>
         </Form.Group>
       </Form>

@@ -4,22 +4,24 @@ import MyNavbar from './components/MyNavbar';
 
 import Router from './Router';
 import { useRoutes } from "react-router";
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 function App() {
   const [mode, setMode] = useState('light');
 
-//   useEffect(() => {
-//     return () => {
-//         alert("Theme is going to change"); 
-//     };
-// }, [])
+  useEffect(() => {
+    return () => {
+      console.log("useEffect");
+    };
+}, [])
+console.log("outside ");
   const routing= useRoutes(Router);
   const toggleTheme=()=>{
   if(mode==='light'){
     setMode('dark');
     document.body.style.backgroundColor='#6c757d'
     document.body.style.color="white"
+
   }
   else{
     setMode('light');
@@ -31,6 +33,7 @@ function App() {
    <>
 <MyNavbar mode={mode} toggleTheme={toggleTheme}/>
 {routing}
+
 </>
   );
 }
